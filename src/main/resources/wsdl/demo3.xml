@@ -1,0 +1,21 @@
+<wsdl:binding name="binding" type="tns:ManufacturingOrderExecuteRequest_Out_V2">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="ManufacturingOrderExecuteRequest_Out_V2">
+        <soap:operation
+                soapAction="http://sap.com/xi/PP/Global2/ManufacturingOrderExecuteRequest_Out_V2/ManufacturingOrderExecuteRequest_V2"
+                style="document"/>
+        <wsdl:input>
+            <soap:body use="literal"/>
+        </wsdl:input>
+        <wsdl:output>
+            <soap:body use="literal"/>
+        </wsdl:output>
+        <wsdl:fault name="StandardMessageFault">
+            <soap:fault name="StandardMessageFault" use="literal"/>
+        </wsdl:fault>
+    </wsdl:operation>
+</wsdl:binding> <wsdl:service name="service">
+<wsdl:port name="binding" binding="tns:binding">
+    <soap:address location="/dmc/ws/ManufacturingOrderExecuteRequest_V2"/>
+</wsdl:port>
+</wsdl:service>

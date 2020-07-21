@@ -1,0 +1,194 @@
+<payload>
+    <A_MaterialDocumentHeaderType>
+        <MaterialDocumentYear Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="NonNegative"
+                              sap:label="Material Document Year"/>
+        <MaterialDocument Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase"
+                          sap:label="Material Document" sap:quickinfo="Number of Material Document"/>
+        <InventoryTransactionType Type="Edm.String" MaxLength="2" sap:display-format="UpperCase"
+                                  sap:label="Trans./Event Type" sap:quickinfo="Transaction/Event Type"/>
+        <DocumentDate Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Document Date"
+                      sap:quickinfo="Document Date in Document"/>
+        <PostingDate Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Posting Date"
+                     sap:quickinfo="Posting Date in the Document"/>
+        <CreationDate Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Entry Date"
+                      sap:quickinfo="Day On Which Accounting Document Was Entered"/>
+        <CreationTime Type="Edm.Time" Precision="0" sap:label="Time of Entry"/>
+        <CreatedByUser Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="User Name"/>
+        <MaterialDocumentHeaderText Type="Edm.String" MaxLength="25" sap:label="Document Header Text"/>
+        <ReferenceDocument Type="Edm.String" MaxLength="16" sap:display-format="UpperCase" sap:label="Reference"
+                           sap:quickinfo="Reference Document Number"/>
+        <VersionForPrintingSlip Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="Print Version"
+                                sap:quickinfo="Version for Printing GR/GI Slip"/>
+        <ManualPrintIsTriggered Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="Print Active"
+                                sap:quickinfo="Print via Output Control"/>
+        <GoodsMovementCode Type="Edm.String" MaxLength="2" sap:display-format="UpperCase"
+                           sap:label="Goods Movement Code"/>
+        <to_MaterialDocumentItem>
+            <A_MaterialDocumentItemType>
+                <MaterialDocumentYear Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="NonNegative"
+                                      sap:label="Material Document Year"/>
+                <MaterialDocument Type="Edm.String" Nullable="false" MaxLength="10" sap:display-format="UpperCase"
+                                  sap:label="Material Document" sap:quickinfo="Number of Material Document"/>
+                <MaterialDocumentItem Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="NonNegative"
+                                      sap:label="Material Document Item"/>
+                <Material Type="Edm.String" MaxLength="40" sap:display-format="UpperCase" sap:label="Material"
+                          sap:quickinfo="Material Number"/>
+                <Plant Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Plant"/>
+                <StorageLocation Type="Edm.String" MaxLength="4" sap:display-format="UpperCase"
+                                 sap:label="Storage Location"/>
+                <Batch Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Batch"
+                       sap:quickinfo="Batch Number"/>
+                <GoodsMovementType Type="Edm.String" MaxLength="3" sap:display-format="UpperCase"
+                                   sap:label="Goods Movement Type"
+                                   sap:quickinfo="Goods Movement Type (Inventory Management)"/>
+                <InventoryStockType Type="Edm.String" MaxLength="2" sap:display-format="UpperCase"
+                                    sap:label="Stock Type"
+                                    sap:quickinfo="Stock Type of Goods Movement (Stock Identifier)"/>
+                <InventoryValuationType Type="Edm.String" MaxLength="10" sap:display-format="UpperCase"
+                                        sap:label="Valuation Type"/>
+                <InventorySpecialStockType Type="Edm.String" MaxLength="1" sap:display-format="UpperCase"
+                                           sap:label="Special Stock Type"/>
+                <Supplier Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Supplier"
+                          sap:quickinfo="Supplier's Account Number"/>
+                <Customer Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Customer"
+                          sap:quickinfo="Account number of customer"/>
+                <SalesOrder Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Sales Order"
+                            sap:quickinfo="Sales Order Number"/>
+                <SalesOrderItem Type="Edm.String" MaxLength="6" sap:display-format="NonNegative"
+                                sap:label="Sales Order Item"/>
+                <SalesOrderScheduleLine Type="Edm.String" MaxLength="4" sap:display-format="NonNegative"
+                                        sap:label="Sales Order Schedule"/>
+                <PurchaseOrder Type="Edm.String" MaxLength="10" sap:display-format="UpperCase"
+                               sap:label="Purchase Order" sap:quickinfo="Purchase Order Number"/>
+                <PurchaseOrderItem Type="Edm.String" MaxLength="5" sap:display-format="NonNegative"
+                                   sap:label="Purchase Order Item" sap:quickinfo="Item Number of Purchasing Document"/>
+                <WBSElement Type="Edm.String" MaxLength="24" sap:display-format="UpperCase" sap:label="WBS Element"
+                            sap:quickinfo="Work Breakdown Structure Element (WBS Element)"/>
+                <ManufacturingOrder Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="Order"
+                                    sap:quickinfo="Order Number"/>
+                <ManufacturingOrderItem Type="Edm.String" MaxLength="4" sap:display-format="NonNegative"
+                                        sap:label="Order Item"/>
+                <GoodsMovementRefDocType Type="Edm.String" MaxLength="1" sap:display-format="UpperCase"
+                                         sap:label="Reference Doc. Type" sap:quickinfo="Goods movement ref doc type"/>
+                <GoodsMovementReasonCode Type="Edm.String" MaxLength="4" sap:display-format="NonNegative"
+                                         sap:label="Reason for Movement"/>
+                <AccountAssignmentCategory Type="Edm.String" MaxLength="1" sap:display-format="UpperCase"
+                                           sap:label="Account Assignment Category"/>
+                <CostCenter Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Cost Center"/>
+                <ControllingArea Type="Edm.String" MaxLength="4" sap:display-format="UpperCase"
+                                 sap:label="Controlling Area"/>
+                <CostObject Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="Cost Object"/>
+                <ProfitabilitySegment Type="Edm.String" MaxLength="10" sap:display-format="NonNegative"
+                                      sap:label="Profitability Segment"/>
+                <ProfitCenter Type="Edm.String" MaxLength="10" sap:display-format="UpperCase"
+                              sap:label="Profit Center"/>
+                <GLAccount Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="G/L Account"
+                           sap:quickinfo="G/L Account Number"/>
+                <FunctionalArea Type="Edm.String" MaxLength="16" sap:display-format="UpperCase"
+                                sap:label="Functional Area"/>
+                <MaterialBaseUnit Type="Edm.String" MaxLength="3" sap:label="Base Unit of Measure"
+                                  sap:semantics="unit-of-measure"/>
+                <QuantityInBaseUnit Type="Edm.Decimal" Precision="13" Scale="3" sap:unit="MaterialBaseUnit"
+                                    sap:label="Quantity"/>
+                <EntryUnit Type="Edm.String" MaxLength="3" sap:label="Unit of Entry" sap:quickinfo="Unit of entry"
+                           sap:semantics="unit-of-measure"/>
+                <QuantityInEntryUnit Type="Edm.Decimal" Precision="13" Scale="3" sap:unit="EntryUnit"
+                                     sap:label="Qty in unit of entry" sap:quickinfo="Quantity in unit of entry"/>
+                <CompanyCodeCurrency Type="Edm.String" MaxLength="5" sap:label="Company Code Currency"
+                                     sap:semantics="currency-code"/>
+                <GdsMvtExtAmtInCoCodeCrcy Type="Edm.Decimal" Precision="14" Scale="3" sap:unit="CompanyCodeCurrency"
+                                          sap:label="Ext. Amount in LC"
+                                          sap:quickinfo="Externally Entered Posting Amount in Local Currency"/>
+                <SlsPrcAmtInclVATInCoCodeCrcy Type="Edm.Decimal" Precision="14" Scale="3" sap:unit="CompanyCodeCurrency"
+                                              sap:label="Sales Value inc. VAT"
+                                              sap:quickinfo="Value at Sales Prices Including Value-Added Tax"/>
+                <FiscalYear Type="Edm.String" MaxLength="4" sap:display-format="NonNegative" sap:label="Fiscal Year"/>
+                <FiscalYearPeriod Type="Edm.String" MaxLength="7" sap:display-format="NonNegative"
+                                  sap:label="Fiscal Year & Period" sap:quickinfo="Period Year"/>
+                <FiscalYearVariant Type="Edm.String" MaxLength="2" sap:display-format="UpperCase"
+                                   sap:label="Fiscal Year Variant"/>
+                <IssgOrRcvgMaterial Type="Edm.String" MaxLength="40" sap:display-format="UpperCase"
+                                    sap:label="Transfer Material"/>
+                <IssgOrRcvgBatch Type="Edm.String" MaxLength="10" sap:display-format="UpperCase"
+                                 sap:label="Transfer Batch"/>
+                <IssuingOrReceivingPlant Type="Edm.String" MaxLength="4" sap:display-format="UpperCase"
+                                         sap:label="Rec/Iss Plant" sap:quickinfo="Receiving/Issuing Plant"/>
+                <IssuingOrReceivingStorageLoc Type="Edm.String" MaxLength="4" sap:display-format="UpperCase"
+                                              sap:label="Receiving stor. loc."
+                                              sap:quickinfo="Receiving/issuing storage location"/>
+                <IssuingOrReceivingStockType Type="Edm.String" MaxLength="2" sap:display-format="UpperCase"
+                                             sap:label="Transfer Stock Type"/>
+                <IssgOrRcvgSpclStockInd Type="Edm.String" MaxLength="1" sap:display-format="UpperCase"
+                                        sap:label="Transfer Special Stock Type"/>
+                <IssuingOrReceivingValType Type="Edm.String" MaxLength="10" sap:display-format="UpperCase"
+                                           sap:label="Val. Type Tfr Batch"
+                                           sap:quickinfo="Valuation Type of Transfer Batch"/>
+                <IsCompletelyDelivered Type="Edm.Boolean" sap:display-format="UpperCase" sap:label="Delivery Completed"
+                                       sap:quickinfo="" Delivery Completed" Indicator"/>
+                <MaterialDocumentItemText Type="Edm.String" MaxLength="50" sap:label="Text" sap:quickinfo="Item Text"/>
+                <UnloadingPointName Type="Edm.String" MaxLength="25" sap:label="Unloading Point"/>
+                <ShelfLifeExpirationDate Type="Edm.DateTime" Precision="0" sap:display-format="Date"
+                                         sap:label="SLED/BBD"
+                                         sap:quickinfo="Shelf Life Expiration or Best-Before Date"/>
+                <ManufactureDate Type="Edm.DateTime" Precision="0" sap:display-format="Date"
+                                 sap:label="Date of Manufacture"/>
+                <SerialNumbersAreCreatedAutomly Type="Edm.Boolean" sap:display-format="UpperCase"
+                                                sap:label="SerialNo. auto."
+                                                sap:quickinfo="Create serial number automatically"/>
+                <Reservation Type="Edm.String" MaxLength="10" sap:display-format="NonNegative" sap:label="Reservation"
+                             sap:quickinfo="Number of reservation/dependent requirements"/>
+                <ReservationItem Type="Edm.String" MaxLength="4" sap:display-format="NonNegative"
+                                 sap:label="Reservation Item"
+                                 sap:quickinfo="Item Number of Reservation / Dependent Requirements"/>
+                <ReservationIsFinallyIssued Type="Edm.Boolean" sap:display-format="UpperCase"
+                                            sap:label="Res Final Issue" sap:quickinfo="Final Issue for Reservation"/>
+                <SpecialStockIdfgSalesOrder Type="Edm.String" MaxLength="10" sap:display-format="UpperCase"
+                                            sap:label="Sales order"
+                                            sap:quickinfo="Sales order number of valuated sales order stock"/>
+                <SpecialStockIdfgSalesOrderItem Type="Edm.String" MaxLength="6" sap:display-format="NonNegative"
+                                                sap:label="Sales order item"
+                                                sap:quickinfo="Sales Order Item of Valuated Sales Order Stock"/>
+                <SpecialStockIdfgWBSElement Type="Edm.String" MaxLength="24" sap:display-format="UpperCase"
+                                            sap:label="WBS Element"
+                                            sap:quickinfo="Work Breakdown Structure Element (WBS Element)"/>
+                <IsAutomaticallyCreated Type="Edm.String" MaxLength="1" sap:display-format="UpperCase"
+                                        sap:label="Automat. Created"
+                                        sap:quickinfo="Item Automatically Created Indicator"/>
+                <MaterialDocumentLine Type="Edm.String" MaxLength="6" sap:display-format="NonNegative"
+                                      sap:label="Line ID" sap:quickinfo="Unique Identification of Document Line"/>
+                <MaterialDocumentParentLine Type="Edm.String" MaxLength="6" sap:display-format="NonNegative"
+                                            sap:label="Parent line ID"
+                                            sap:quickinfo="Identifier of immediately superior line"/>
+                <HierarchyNodeLevel Type="Edm.String" MaxLength="2" sap:display-format="NonNegative"
+                                    sap:label="Hierarchy level" sap:quickinfo="Hierarchy level of line in document"/>
+                <GoodsMovementIsCancelled Type="Edm.Boolean" sap:display-format="UpperCase"
+                                          sap:label="Is Item Cancelled" sap:quickinfo="Item has been Cancelled"/>
+                <ReversedMaterialDocumentYear Type="Edm.String" MaxLength="4" sap:display-format="NonNegative"
+                                              sap:label="Reversed Doc Year"
+                                              sap:quickinfo="Reversed Material Document Year"/>
+                <ReversedMaterialDocument Type="Edm.String" MaxLength="10" sap:display-format="UpperCase"
+                                          sap:label="Reversed Mat Doc" sap:quickinfo="Reversed Material Document"/>
+                <ReversedMaterialDocumentItem Type="Edm.String" MaxLength="4" sap:display-format="NonNegative"
+                                              sap:label="Reversed Doc Item"
+                                              sap:quickinfo="Reversed Material Document Item"/>
+                <to_MaterialDocumentHeader>
+                </to_MaterialDocumentHeader>
+                <to_SerialNumbers>
+                    <A_SerialNumberMaterialDocumentType>
+                        <Material Type="Edm.String" Nullable="false" MaxLength="40" sap:display-format="UpperCase"
+                                  sap:label="Material" sap:quickinfo="Material Number"/>
+                        <SerialNumber Type="Edm.String" Nullable="false" MaxLength="18" sap:display-format="UpperCase"
+                                      sap:label="Serial Number"/>
+                        <MaterialDocument Type="Edm.String" Nullable="false" MaxLength="10"
+                                          sap:display-format="UpperCase" sap:label="Material Document"
+                                          sap:quickinfo="Number of Material Document"/>
+                        <MaterialDocumentItem Type="Edm.String" Nullable="false" MaxLength="4"
+                                              sap:display-format="NonNegative" sap:label="Material Document Item"/>
+                        <MaterialDocumentYear Type="Edm.String" Nullable="false" MaxLength="4"
+                                              sap:display-format="NonNegative" sap:label="Material Document Year"/>
+                    </A_SerialNumberMaterialDocumentType>
+                </to_SerialNumbers>
+            </A_MaterialDocumentItemType>
+        </to_MaterialDocumentItem>
+    </A_MaterialDocumentHeaderType>
+</payload>
